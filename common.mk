@@ -164,8 +164,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Piano: upstream phone-only feature omitted.
-
 # Graphics - gralloc, the mapper and the allocator build from
 # hardware/qcom-caf/sm8750/display; their exported ABI matches the stock libs
 # the stock composer links. libdisplaydebug stays stock because the stock
@@ -194,8 +192,6 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.vulkan.version-1_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_3.xml \
 	frameworks/native/data/etc/android.software.opengles.deqp.level-2023-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
 	frameworks/native/data/etc/android.software.vulkan.deqp.level-2023-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
-
-# Piano: upstream phone-only feature omitted.
 
 # Health
 PRODUCT_PACKAGES += \
@@ -270,8 +266,6 @@ PRODUCT_PACKAGES += \
 # Network
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
-# Piano: upstream phone-only feature omitted.
 
 # Overlay
 PRODUCT_PACKAGES += \
@@ -353,8 +347,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vndservice manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Piano: upstream phone-only feature omitted.
 
 # Thermal
 PRODUCT_PACKAGES += \
