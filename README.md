@@ -1,18 +1,13 @@
-# Xiaomi Pad 8 Pro unified device-common tree
+# Xiaomi SM8750 Common Device Tree
 
-One branch supports both Android 16 and Android 17. **Do not mix**
-firmware, kernel modules, library imports or vendor binaries.
+Shared Android 16 device configuration for compatible Xiaomi SM8750 devices.
 
-The versioned directories preserve the original files from:
+Path:
 
-- Android 16: `device-common-16` at `fc97d2e2f1c2`
-- Android 17: `device-common-17` at `0262fbefa2c3`
+```text
+device/xiaomi/sm8750-common
+```
 
-`sync-device.sh` runs `python3 select-version.py 16` or `17`
-after syncing. The selector stages the matching files at the
-original build paths and checks for collisions. The generated
-root files are ignored by Git; sources under `versions/` are
-immutable. Android.bp/Android.mk are stored as `.in` to avoid
-duplicate Soong/Make modules in the inactive version.
+Reusable with compatible Android 16 ROMs.
 
-A complete ROM build and device smoke tests remain necessary.
+See the [main branch](../../tree/main) for the other shared trees.
