@@ -110,7 +110,7 @@ backlight itself).
 
 ## Patches
 
-In `device/xiaomi/piano/patches/hardware_qcom-caf_sm8750_display/`. Paths are relative to
+In `device/xiaomi/piano-patches/patches/hardware_qcom-caf_sm8750_display/`. Paths are relative to
 `hardware/qcom-caf/sm8750/display`, which is not a git project, so
 `apply-patches.sh` applies them there with `git apply` outside a repository.
 All four apply in order to the current tree.

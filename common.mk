@@ -312,8 +312,9 @@ PRODUCT_PACKAGES += \
     qspa_vendor.rc \
     vendor.qti.qspa-service
 
-ifeq ($(filter piano,$(TARGET_DEVICE)),)
-# Recovery
+# Recovery. Devices without QTI DRM in recovery set this to false.
+TARGET_RECOVERY_USES_QTI_DRM ?= true
+ifeq ($(TARGET_RECOVERY_USES_QTI_DRM),true)
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 endif
 
@@ -325,7 +326,7 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc
 
-# Piano installs its first-stage fstab from its device tree.
+# Devices install their first-stage fstab from their device tree.
 
 # Sensors
 
