@@ -13,13 +13,10 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 media.aac_51_output_enabled=true
-media.settings.xml=/vendor/etc/media_profiles_piano.xml
 ro.mediaserver.64b.enable=true
 
 # NFC
 ro.nfc.port=I2C
-
-# Radio VoNR Calling
 
 # SSR
 persist.vendor.ssr.enable_ramdumps=1

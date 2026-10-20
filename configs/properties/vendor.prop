@@ -140,8 +140,7 @@ persist.vendor.dpm.vndr.idletimer.mode=default
 drm.service.enabled=true
 vendor.wv.oemcrypto.debug.enable_hlos_data_path=true
 
-# Fingerprint: power-button sensor (Global 304 mfp daemon)
-persist.vendor.fingerprint.type=side
+# Fingerprint: power-button sensor
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # FUSE
@@ -244,8 +243,6 @@ vendor.usb.use_gadget_hal=1
 
 # Volume
 ro.config.alarm_vol_steps=15
-ro.config.media_vol_default=10
-ro.config.media_vol_steps=15
 ro.config.system_vol_steps=15
 ro.config.vc_call_vol_steps=11
 

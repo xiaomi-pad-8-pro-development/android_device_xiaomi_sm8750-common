@@ -14,5 +14,3 @@ persist.bluetooth.leaudio.notify.idle.during.call=true
 # unsupported peers continue to fall back to LC3/mSBC/CVSD.
 bluetooth.hfp.swb.supported=true
 bluetooth.hfp.codec_aptx_voice.enabled=true
-
-# Radio
